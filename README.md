@@ -1,20 +1,28 @@
 # MA_LANGUAGE
 
-## About
+## Roadmap
+
 In this project I developed a tiny programming language.
 To be exact I:
-### 1. Developed language's grammar (details will be added later, but you can try to get it by exploring [great_grammar](great_grammar.cpp)).
+
+### 1. Developed language's grammar 
+
+Details will be added later, but you can try to get it by exploring [great_grammar](great_grammar.cpp).
 
 ![example of ma_language code](Pictures/exapmle_of_code.PNG)
 
-### 2. Created frontend for this language. I made RDP (recursive descent parser). As a result i got AST (abstract syntax tree)
+### 2. Created frontend for this language. 
+
+I made RDP (recursive descent parser). As a result I got AST (abstract syntax tree).
 
 ![abstract syntx tree](Pictures/ast.PNG)
 
-### 3.Created backend that translates AST to assembler of [my virtual machine](https://github.com/matmuher/flip-flop/tree/main/processor)
+### 3.Created backend 
+
+It translates AST to assembly language of [my virtual machine](https://github.com/matmuher/flip-flop/tree/main/processor).
 ![example of generated assemble code](Pictures/asm.PNG)
 
-## Programs example:
+## Programs examples:
 
 ### Factorial:
 
@@ -162,4 +170,23 @@ define SolveViaD (coef1,coef2,coef3)
 	return NoRoots;	
 }!
 $
+```
+
+## Syntax
+
+### Defining function
+```
+define FuncName (param1,param2)
+{
+	statements;
+}
+```
+
+### Standard frames
+
+```
+if(a<b)
+{
+	statements;
+};
 ```
